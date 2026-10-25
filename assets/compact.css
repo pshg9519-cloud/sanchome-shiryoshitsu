@@ -1,0 +1,44 @@
+/* Home only: retain the existing board, other pages and all work data. */
+body[data-page="home"] .v4-hero{position:relative;margin-top:8px}
+body[data-page="home"] #title-scene{--compact-figure:190px;--compact-sign-top:59px;height:190px}
+body[data-page="home"] #title-scene .header-room{object-position:50% 27%}
+body[data-page="home"] #title-scene .header-enamel{left:50%;top:var(--compact-sign-top);transform:translateX(-50%);max-width:calc(100% - 24px);padding:12px 22px 15px;white-space:nowrap}
+body[data-page="home"] #title-scene .header-name{display:block;font-family:"UD Digi Kyokasho NK-B","UD Digi Kyokasho NK",var(--round);font-weight:700;font-size:clamp(42px,5.1vw,73px);letter-spacing:.02em;line-height:1.15;white-space:nowrap}
+body[data-page="home"] #title-scene .header-name-part{display:inline}
+body[data-page="home"] #title-scene .header-final-kanji{position:relative;display:inline-block}
+body[data-page="home"] #title-scene .header-stamp{width:.67em;height:.67em;right:-.31em;bottom:-.23em;transform:rotate(-9deg);opacity:.94}
+body[data-page="home"] #title-scene .header-guide{left:calc(50% - var(--compact-sign-width,440px) / 2 - var(--compact-figure) * .46875 + 17px);top:calc(var(--compact-sign-top) - var(--compact-figure) * .3125);width:calc(var(--compact-figure) * .666666667);height:var(--compact-figure)}
+body[data-page="home"] .v4-welcome{padding:5px 2px 4px;gap:12px;flex-direction:row;align-items:center}
+body[data-page="home"] .v4-welcome .v4-description{font-size:11px;line-height:1.5}
+body[data-page="home"] .v4-welcome .v4-tagline{font-size:19px;line-height:1.5;margin-top:0;letter-spacing:.02em}
+body[data-page="home"] .v4-actions{gap:18px}
+body[data-page="home"] .v4-actions .button{min-height:36px;min-width:122px;padding:6px 14px;font-size:12px}
+body[data-page="home"] .v4-actions .text-link{font-size:12px;padding-bottom:2px}
+body[data-page="home"] .v4-recent{padding-top:4px}
+body[data-page="home"] .v4-recent .v4-heading{margin-bottom:9px;min-height:31px;align-items:center}
+body[data-page="home"] .v4-recent .v4-heading>div{display:flex;align-items:baseline;gap:12px}
+body[data-page="home"] .v4-recent .v4-kicker{margin:0;font-size:9px}
+body[data-page="home"] .v4-recent h2{font-size:23px;line-height:1.35}
+body[data-page="home"] .v4-recent h2::after{display:none}
+@media(max-width:1040px) and (min-width:661px){body[data-page="home"] #title-scene{--compact-figure:190px;--compact-sign-top:61px}body[data-page="home"] .v4-welcome .v4-tagline{font-size:16px}}
+@media(min-width:1041px){body[data-page="home"] .v4-welcome>div:first-child{display:flex;align-items:baseline;gap:14px}body[data-page="home"] .v4-actions .button{min-height:32px;padding-block:4px}}
+@media(max-width:660px){
+ body[data-page="home"] #title-scene{--compact-figure:clamp(155px,43vw,178px);--compact-guide-top:min(12px,calc(180px - var(--compact-figure)));--compact-sign-top:calc(var(--compact-guide-top) + var(--compact-figure) * .3125);height:180px}
+ body[data-page="home"] #title-scene .header-room{object-position:100% 27%}
+ body[data-page="home"] #title-scene .header-enamel{padding:10px 14px 12px;max-width:calc(100% - 18px)}
+ body[data-page="home"] #title-scene .header-name{font-size:clamp(29px,9.2vw,39px);letter-spacing:.015em;line-height:1.15}
+ body[data-page="home"] #title-scene .header-name-part{display:inline}
+ body[data-page="home"] #title-scene .header-guide{left:calc(50% - var(--compact-sign-width,220px) / 2 - var(--compact-figure) * .46875 + 17px);top:var(--compact-guide-top);width:calc(var(--compact-figure) * .666666667);height:var(--compact-figure)}
+ body[data-page="home"] .v4-welcome{padding:5px 2px 3px;flex-direction:column;gap:4px;align-items:flex-start}
+ body[data-page="home"] .v4-welcome .v4-description{font-size:10px;line-height:1.4}
+ body[data-page="home"] .v4-welcome .v4-tagline{font-size:16px;line-height:1.5}
+ body[data-page="home"] .v4-actions{gap:17px;flex-wrap:nowrap}
+ body[data-page="home"] .v4-actions .button{min-height:32px;min-width:112px;font-size:11px;padding:4px 12px}
+ body[data-page="home"] .v4-actions .text-link{font-size:11px}
+ body[data-page="home"] .v4-recent{padding-top:3px}
+ body[data-page="home"] .v4-recent .v4-heading{margin-bottom:8px;min-height:29px;gap:8px}
+ body[data-page="home"] .v4-recent .v4-heading>div{gap:6px}
+ body[data-page="home"] .v4-recent h2{font-size:20px}
+ body[data-page="home"] .v4-recent .v4-kicker{font-size:8px;letter-spacing:.07em}
+ body[data-page="home"] .v4-recent .v4-heading>.text-link{font-size:10px}
+}

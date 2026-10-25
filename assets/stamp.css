@@ -1,0 +1,15 @@
+/* Use the author's real stamp; all approved title/figure geometry is inherited. */
+body[data-page="home"] #title-scene .header-stamp{
+ --stamp-side:.88em;--stamp-right:-.35em;--stamp-bottom:-.34em;
+ width:var(--stamp-side);height:var(--stamp-side);
+ right:var(--stamp-right);bottom:var(--stamp-bottom);
+ object-fit:contain;transform:rotate(-7deg);opacity:1;pointer-events:none;
+}
+@media(max-width:660px){
+ body[data-page="home"] #title-scene .header-stamp{
+  --stamp-side:1em;--stamp-right:-.37em;--stamp-bottom:-.32em;
+ }
+}
+/* Same small navigation slot; replace its older text mark with the same PNG. */
+.brand-stamp{border-color:transparent;background:transparent}
+.brand-stamp img{display:block;width:100%;height:100%;object-fit:contain}

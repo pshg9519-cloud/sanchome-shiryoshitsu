@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "background": "assets/header/lineart-room-desktop.png",
+  "stamp": "assets/header/stamp-kari-coral-transparent.png",
+  "guide": "assets/header/bodako-guide-pose.png",
+  "background_mobile": "assets/header/lineart-room-mobile.png"
+}

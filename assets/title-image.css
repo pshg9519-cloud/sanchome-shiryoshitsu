@@ -1,0 +1,5 @@
+/* The original invisible lettering keeps the approved sign and guide dimensions.
+   Only the visible ink is replaced; the author's PNG is copied without editing. */
+body[data-page="home"] #title-scene .title-refined:not(.title-lettering-fallback)>.title-lettering-metric{visibility:hidden}
+body[data-page="home"] #title-scene .title-lettering-image{position:absolute;left:0;top:50%;width:100%;height:auto;max-width:none;transform:translateY(-50%);object-fit:contain;visibility:visible;pointer-events:none;z-index:0}
+body[data-page="home"] #title-scene .title-refined .header-stamp{visibility:visible;z-index:1}

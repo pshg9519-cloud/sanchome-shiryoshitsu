@@ -1,0 +1,25 @@
+/* Additive styles for videos/books/other works. Approved header/comics rules remain untouched. */
+.video-meta{min-width:0}.video-meta h3{overflow-wrap:anywhere;line-height:1.65}
+.video-date{display:block;font-size:11px;color:var(--muted);margin-top:8px}
+.video-links{flex-wrap:wrap}.video-links a{display:inline-flex;align-items:center;min-height:40px}
+.video-play{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);white-space:nowrap;border-radius:4px;padding:6px 10px;background:var(--color-page);color:var(--ink);border:1px solid var(--line);font-size:11px;pointer-events:none}
+.video-open:hover .video-play{border-color:var(--accent)}
+.video-dialog{overscroll-behavior:contain}.video-dialog.short{width:min(500px,calc(100% - 24px));max-height:94dvh}
+.video-dialog.short iframe{height:min(59dvh,640px);width:auto;aspect-ratio:9/16;max-width:100%}
+.video-dialog .dialog-heading{align-items:flex-start;gap:10px;margin-bottom:12px}
+.video-dialog .dialog-heading h2{font-size:15px;overflow-wrap:anywhere}
+.video-dialog #video-close{min-width:64px;min-height:40px}
+.video-dialog .small-note{margin-top:10px;font-size:11px}
+.video-dialog #video-links{margin-top:4px}.video-dialog .video-links{margin-top:0}
+body:has(.video-dialog[open]){overflow:hidden}
+.content-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.content-card{min-width:0}.content-card h3{font-size:20px;font-weight:600}.content-card .content-label,.content-label{font-size:10px;color:var(--muted);letter-spacing:.1em;margin:0 0 8px}.content-card p{min-height:0}
+.content-card .text-link{display:inline-flex;align-items:center;min-height:44px}
+.book-mini{float:left;width:76px;height:auto;object-fit:contain;margin:0 16px 12px 0}
+.book-section{display:grid;grid-template-columns:minmax(200px,340px) minmax(0,1fr);gap:64px;align-items:start;padding-top:16px;max-width:1000px}
+.book-cover{margin:0}.book-cover img{width:100%;height:auto;object-fit:contain;box-shadow:0 4px 16px var(--color-shadow)}
+.book-copy h2{font-size:26px}.book-author{font-size:13px;color:var(--muted);margin:12px 0 28px}.book-description{font-size:15px;line-height:2;margin-bottom:22px}.book-copy .button{margin:8px 0 12px}.book-copy .small-note{max-width:34em;margin-bottom:28px}
+body[data-page="kindle"] [data-nav="other"]::after{content:"";position:absolute;bottom:1px;left:0;width:42px;height:2px;background:var(--accent)}
+@media(max-width:850px){.content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.book-section{gap:32px}}
+@media(max-width:660px){.video-meta{padding:10px}.video-meta h3{font-size:11px}.video-date{font-size:10px}.video-play{font-size:10px;padding:5px 8px;bottom:8px}.video-links{font-size:10px}.video-dialog{padding:14px}.video-dialog.short iframe{height:min(55dvh,500px)}.video-dialog .dialog-heading h2{font-size:12px;line-height:1.65}.video-dialog .dialog-heading{margin-bottom:8px}.content-grid{grid-template-columns:1fr;gap:16px}.content-card h3{font-size:19px}.book-mini{width:68px}.book-section{grid-template-columns:1fr;gap:30px;padding-top:8px}.book-cover{width:min(250px,80%);margin-inline:auto}.book-copy h2{font-size:23px}.book-description{font-size:14px}.book-author{margin-bottom:20px}}
+@media(min-width:851px){.v4-films .video-grid{max-width:820px;margin-inline:auto}}

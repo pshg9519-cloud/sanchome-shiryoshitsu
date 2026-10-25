@@ -1,0 +1,56 @@
+/* Color-only layer. Approved title artwork and all geometry stay unchanged. */
+:root{
+ --color-page:#FAF9F6;
+ --color-cream:#F4EEDF;
+ --color-border:#CFC3AF;
+ --color-ink:#262824;
+ --color-accent:#FF795E;
+ --color-white:#FFFFFF;
+ --approved-brand-paper:#FFF0E8;
+ --color-muted:color-mix(in srgb,var(--color-ink) 72%,var(--color-page));
+ --color-accent-hover:color-mix(in srgb,var(--color-accent) 94%,var(--color-page));
+ --color-shadow:color-mix(in srgb,var(--color-ink) 7%,transparent);
+ --color-viewer-surface:color-mix(in srgb,var(--color-ink) 92%,var(--color-white));
+ --color-viewer-border:color-mix(in srgb,var(--color-ink) 65%,var(--color-white));
+ --color-viewer-muted:color-mix(in srgb,var(--color-white) 75%,var(--color-ink));
+ --paper:var(--color-page);--white:var(--color-white);--ink:var(--color-ink);
+ --accent:var(--color-accent);--peach:var(--color-cream);--line:var(--color-border);
+ --muted:var(--color-muted);--focus:var(--color-ink);--wood:var(--color-border);
+}
+body,.site-header,.site-footer,.site-header nav{background-color:var(--color-page);color:var(--color-ink)}
+h1,h2,h3,.site-header nav a,.site-header nav button{color:var(--color-ink)}
+/* The approved navigation seal, like the large SVG seal, is an exception. */
+.brand-stamp{background-color:var(--approved-brand-paper)}
+.site-header nav button span{color:var(--color-muted)}
+.site-header nav a[aria-current="page"]::after{background-color:var(--color-accent)}
+.v4-kicker,.series-kicker,.hero-description,.kind-label{color:var(--color-muted)}
+.button{color:var(--color-ink);border-color:var(--color-border)}
+.button-primary{background-color:var(--color-accent);border-color:var(--color-accent);color:var(--color-ink)}
+.button-primary:hover{background-color:var(--color-accent-hover);border-color:var(--color-accent-hover);color:var(--color-ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--color-accent) 12%,transparent)}
+.button-secondary{background-color:transparent;border-color:var(--color-border)}
+.button-secondary:hover{background-color:var(--color-cream)}
+.text-link,.text-link:hover{color:var(--color-ink);border-bottom-color:var(--color-accent);background-color:transparent}
+.footer-links a,.video-links a,#video-links a,.page-breadcrumb a{color:var(--color-ink);text-decoration:underline;text-decoration-color:var(--color-accent);text-decoration-thickness:1px;text-underline-offset:4px}
+a:focus-visible,button:focus-visible,select:focus-visible{outline-color:var(--color-ink)}
+/* Same frame, paper, tape and thumbnail dimensions. Only paint changes. */
+body[data-page="home"] .v4-board{background:var(--color-cream);border-color:var(--color-border);outline-color:var(--color-border);box-shadow:inset 0 0 0 1px var(--color-border)}
+body[data-page="home"] .v4-paper{background-color:var(--color-white);box-shadow:0 1px 3px var(--color-shadow)}
+.v4-exhibit,.v4-series-art,.comic-open,.comic-art,.series-image,.video-open{background-color:var(--color-white)}
+.v4-tape{background-color:var(--color-cream);border-color:var(--color-border)}
+.v4-series-card,.v4-reading-card,.v4-films .compact-empty,.series-card,.series-card:nth-child(2),.compact-empty,.large-empty{background-color:var(--color-cream);border-color:var(--color-border)}
+.comic-card,.video-card{background-color:var(--color-white);border-color:var(--color-border)}
+.comic-card:hover{box-shadow:0 7px 21px var(--color-shadow)}
+.kind-label,.video-thumbnail{background-color:var(--color-cream)}
+.filter-tabs button,select,.back-top{background-color:var(--color-white);color:var(--color-ink);border-color:var(--color-border)}
+.filter-tabs button[aria-pressed="true"]{background-color:var(--color-cream);color:var(--color-ink);border-color:var(--color-accent)}
+.filter-tabs button:hover{border-color:var(--color-accent)}
+.back-top{box-shadow:0 3px 10px var(--color-shadow)}
+.info-dialog,.video-dialog,.skip-link{background-color:var(--color-page);color:var(--color-ink);border-color:var(--color-border)}
+/* Preserve the dark reading environment, using the same palette's tints. */
+.comic-viewer,.comic-viewer::backdrop,.video-dialog iframe{background-color:var(--color-ink);color:var(--color-white)}
+.viewer-header,.viewer-footer{border-color:color-mix(in srgb,var(--color-white) 12%,transparent)}
+.viewer-caption h2,.viewer-close{color:var(--color-white)}
+.viewer-caption span,.viewer-loading,.viewer-hint{color:var(--color-viewer-muted)}
+.viewer-footer button{background-color:var(--color-viewer-surface);border-color:var(--color-viewer-border);color:var(--color-white)}
+.viewer-close:hover,.viewer-footer button:hover{border-color:var(--color-accent);color:var(--color-white)}
+.info-dialog::backdrop,.video-dialog::backdrop{background-color:color-mix(in srgb,var(--color-ink) 72%,transparent)}

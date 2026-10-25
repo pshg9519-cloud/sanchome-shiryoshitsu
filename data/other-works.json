@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "book": {
+    "title": "量子力学的断酒法",
+    "author": "Yuzuyuzu",
+    "cover": "assets/books/kindle-cover.jpg",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0H3HCPP7B",
+    "description": [
+      "量子力学の考え方を思考のメタファー（比喩）として用い、飲酒習慣を捉え直す一冊です。",
+      "自分を客観的に「観測」することや、身のまわりの環境を整える視点を、7つのステップで紹介しています。"
+    ]
+  },
+  "items": [
+    {
+      "id": "kindle",
+      "category": "KINDLE",
+      "title": "量子力学的断酒法",
+      "summary": "本でも、物語と新しい視点を。",
+      "cover": "assets/books/kindle-cover.jpg",
+      "href": "kindle.html",
+      "external": false,
+      "linkLabel": "書籍紹介を見る"
+    },
+    {
+      "id": "line",
+      "category": "LINE STICKERS",
+      "title": "LINEスタンプ",
+      "summary": "日々のトークに、キャラクタースタンプを。",
+      "href": "https://line.me/S/shop/sticker/author/5829368",
+      "external": true,
+      "linkLabel": "クリエイターのスタンプ一覧"
+    },
+    {
+      "id": "note",
+      "category": "WRITING",
+      "title": "note",
+      "summary": "執筆や日々の制作の記録を、文章でも。",
+      "href": "https://note.com/fishkun",
+      "external": true,
+      "linkLabel": "noteを見る"
+    }
+  ]
+}

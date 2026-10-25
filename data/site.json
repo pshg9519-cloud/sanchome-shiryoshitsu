@@ -1,0 +1,23 @@
+{
+  "name": "三丁目資料室（仮）",
+  "tagline": "毎日に、ちょっと笑える物語。",
+  "description": "オリジナル漫画とショートアニメの作品サイト",
+  "links": {
+    "kindle": "https://www.amazon.co.jp/dp/B0H3HCPP7B",
+    "note": "https://note.com/fishkun"
+  },
+  "series": [
+    {
+      "id": "bodako",
+      "name": "三丁目のボダ子さん",
+      "description": "ボダ子さんと、そのまわりのみんな。日々のできごとを漫画に。",
+      "preview_id": "IMG-05207"
+    },
+    {
+      "id": "coco",
+      "name": "四丁目のココちゃん",
+      "description": "ココちゃんの毎日をのぞいてみたら。身近なひとコマを漫画に。",
+      "preview_id": "IMG-03818"
+    }
+  ]
+}

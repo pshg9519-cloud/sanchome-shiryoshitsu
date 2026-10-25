@@ -1,0 +1,10 @@
+/* Home only. The hidden original lettering preserves the approved sign box
+   and its dependent character placement; only the visible ink is refined. */
+body[data-page="home"] #title-scene .header-name{position:relative}
+body[data-page="home"] #title-scene .header-name>.header-name-part{visibility:hidden}
+body[data-page="home"] #title-scene .title-refined{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:block;width:max-content;white-space:nowrap;font-family:"UD Digi Kyokasho NK-R","UD Digi Kyokasho NK","Yu Gothic",Meiryo,sans-serif;font-size:94%;font-weight:400;line-height:1.15;letter-spacing:inherit;color:#262824;visibility:visible}
+body[data-page="home"] #title-scene .title-refined-last{position:relative;display:inline-block}
+/* Preserve the physical stamp size, appearance and em offsets; only its
+   attachment point follows the visible last glyph. */
+body[data-page="home"] #title-scene .title-refined .header-stamp{font-size:106.3829787234%}
+@media(min-width:1041px){body[data-page="home"] .v4-board{grid-template-columns:repeat(4,minmax(0,1fr))}}

@@ -1,0 +1,18 @@
+/* Only the newly requested card accents, About page, footer and standard player. */
+.content-card{position:relative}.card-doodle{position:absolute;right:24px;top:22px;width:46px;height:46px;color:var(--color-ink);pointer-events:none}.doodle-accent{stroke:var(--color-accent)}
+.content-card[data-content-id="line"] h3,.content-card[data-content-id="note"] h3{padding-right:54px}
+.about-page{max-width:880px;padding-bottom:70px}.about-section{padding:30px 0;border-top:1px solid var(--color-border)}.about-section h2{font-size:24px;margin-bottom:22px}.about-section .content-label{margin-bottom:8px}.profile-name{font-size:20px;font-weight:600;margin-bottom:20px}.about-text{font-size:16px;line-height:2.1;margin-top:18px;white-space:pre-line;overflow-wrap:anywhere}
+.site-footer{background:var(--color-cream);border-color:var(--color-border);padding-block:38px 20px}
+.site-footer .footer-complete{display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:start;gap:50px}
+.site-footer .footer-name{font-size:20px}.site-footer .footer-tagline{font-size:14px;color:var(--color-ink);margin-top:16px}
+.footer-menu h2,.footer-social h2{font-family:inherit;font-size:13px;color:var(--muted);font-weight:600;line-height:1.75;margin-bottom:10px}
+.footer-complete ul{list-style:none;margin:0;padding:0}.footer-menu a,.footer-social a{font-size:14px;min-height:36px;display:inline-flex;align-items:center;text-underline-offset:5px;text-decoration-thickness:1px}
+.footer-menu a:hover,.footer-social a:hover,.footer-name:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+.footer-complete a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;text-decoration:underline;text-decoration-color:var(--accent)}
+.site-footer .copyright{border-top:1px solid var(--color-border);padding-top:18px;margin:28px auto 0;width:min(1240px,calc(100% - 80px));font-size:12px;color:var(--color-ink)}
+.video-credits{margin-top:10px;font-size:12px;color:var(--muted)}.video-credits summary{cursor:pointer;min-height:36px;display:flex;align-items:center;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}.video-credits p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9;margin-top:8px}
+.video-dialog:not(.short){width:min(840px,calc(100% - 24px));max-height:94dvh}.video-dialog:not(.short) iframe{width:100%;height:auto;aspect-ratio:16/9;max-height:65dvh}
+@media(max-width:850px){.site-footer .footer-complete{gap:26px;grid-template-columns:1.15fr 1fr 1fr}.site-footer .footer-name{font-size:17px}.site-footer .footer-tagline{font-size:12px}}
+@media(max-width:660px){.card-doodle{right:18px;top:18px;width:42px;height:42px}.content-card[data-content-id="line"] h3,.content-card[data-content-id="note"] h3{padding-right:48px}.about-page{padding-bottom:42px}.about-section{padding:25px 0}.about-section h2{font-size:21px;margin-bottom:16px}.profile-name{font-size:18px}.about-text{font-size:14px;line-height:2}.site-footer{padding-top:30px}.site-footer .footer-complete{grid-template-columns:1fr;gap:26px}.site-footer .footer-name{font-size:19px}.site-footer .footer-tagline{font-size:13px;margin-top:10px}.footer-menu a,.footer-social a{min-height:44px;font-size:14px}.site-footer .copyright{width:calc(100% - 32px);font-size:11px;margin-top:25px;padding-top:16px}.video-credits{font-size:11px}}
+
+.video-dialog:not(.short) iframe{min-height:200px}

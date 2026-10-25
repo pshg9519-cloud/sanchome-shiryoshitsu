@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "siteName": "三丁目資料室（仮）",
+  "tagline": "毎日に、ちょっと笑える物語。",
+  "copyright": "© 2026 ひーでぃ（yuzuyuzu）",
+  "internalLinks": [
+    {
+      "label": "ホーム",
+      "href": "index.html"
+    },
+    {
+      "label": "漫画",
+      "href": "comics.html"
+    },
+    {
+      "label": "動画作品",
+      "href": "videos.html"
+    },
+    {
+      "label": "その他の作品",
+      "href": "other-works.html"
+    },
+    {
+      "label": "このサイトについて",
+      "href": "about.html"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "X｜漫画・創作",
+      "href": "https://x.com/shibaone1013"
+    },
+    {
+      "label": "X｜断酒・日常",
+      "href": "https://x.com/Yuzuyuz82578822"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/channel/UCa_4X3zJMCqLFj5NSO4kXDg"
+    },
+    {
+      "label": "note",
+      "href": "https://note.com/fishkun"
+    }
+  ]
+}
