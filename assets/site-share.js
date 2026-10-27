@@ -1,7 +1,15 @@
+// Canonical page metadata stays unchanged; this fixed version applies only to sharing.
+export const SITE_URLS = Object.freeze({
+  canonical: 'https://pshg9519-cloud.github.io/sanchome-shiryoshitsu/',
+  shareVersion: 'ogp1'
+});
+const shareUrl = new URL(SITE_URLS.canonical);
+shareUrl.searchParams.set('share', SITE_URLS.shareVersion);
+
 export const SITE_SHARE = Object.freeze({
   title: '三丁目資料室（仮）',
   text: 'オリジナル漫画とショートアニメの作品サイト。毎日に、ちょっと笑える物語。',
-  url: 'https://pshg9519-cloud.github.io/sanchome-shiryoshitsu/'
+  url: shareUrl.href
 });
 
 export function createSiteShare({e, button}) {
