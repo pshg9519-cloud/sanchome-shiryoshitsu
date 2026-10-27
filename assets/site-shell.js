@@ -1,3 +1,4 @@
+import {createSiteShare} from './site-share.js';
 export function renderFooter({footer,data,e,link,external}){
  const inner=e('div','footer-inner footer-complete'),identity=e('div','footer-identity');
  identity.append(link(data.siteName,'index.html','footer-name'),e('p','footer-tagline',data.tagline));
@@ -5,7 +6,10 @@ export function renderFooter({footer,data,e,link,external}){
  data.internalLinks.forEach(item=>{const li=e('li');li.append(link(item.label,item.href));menu.append(li)});navigation.append(menu);
  const social=e('nav','footer-social');social.setAttribute('aria-label','SNS・外部リンク');social.append(e('h2','','SNS・外部リンク'));const links=e('ul');
  data.socialLinks.forEach(item=>{const li=e('li');li.append(external(item.label+' ↗',item.href));links.append(li)});social.append(links);
+ const share=createSiteShare({e,button:(text,fn,cls='')=>{const b=e('button',cls,text);b.type='button';b.addEventListener('click',fn);return b}});
+ links.append(share);
  inner.append(identity,navigation,social);footer.replaceChildren(inner,e('p','copyright',data.copyright));
+ document.body.append(share.querySelector('.site-share-dialog'));
 }
 export function renderAboutPage({main,data,intro,e}){
  intro('このサイトについて',data.purpose);
